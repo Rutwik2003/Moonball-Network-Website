@@ -48,6 +48,94 @@
             { "name": "/bellyflop", "syntax": "/bellyflop", "example": "/bellyflop", "description": "Lay down on the ground on your stomach." }
         ]
     },
+    "GriefPrevention": {
+        "commands": [
+            {
+                "name": "/claim",
+                "syntax": "/claim",
+                "example": "/claim",
+                "description": "Creates a land claim where you are standing using your available claim blocks."
+            },
+            {
+                "name": "/trust",
+                "syntax": "/trust <player>",
+                "example": "/trust Steve",
+                "description": "Grants a player full building rights inside your claim."
+            },
+            {
+                "name": "/accesstrust",
+                "syntax": "/accesstrust <player>",
+                "example": "/accesstrust Alex",
+                "description": "Grants a player permission to use doors, buttons, and levers inside your claim."
+            },
+            {
+                "name": "/containertrust",
+                "syntax": "/containertrust <player>",
+                "example": "/containertrust Bob",
+                "description": "Allows a player to open chests and use crafting tables in your claim."
+            },
+            {
+                "name": "/untrust",
+                "syntax": "/untrust <player>",
+                "example": "/untrust Steve",
+                "description": "Removes all permissions for the specified player in your claim."
+            },
+            {
+                "name": "/abandonclaim",
+                "syntax": "/abandonclaim",
+                "example": "/abandonclaim",
+                "description": "Deletes your current claim, making the land available for others to claim."
+            },
+            {
+                "name": "/abandonallclaims",
+                "syntax": "/abandonallclaims",
+                "example": "/abandonallclaims",
+                "description": "Deletes all of your claims."
+            },
+            {
+                "name": "/claimlist",
+                "syntax": "/claimlist",
+                "example": "/claimlist",
+                "description": "Displays a list of all claims you currently own."
+            },
+            {
+                "name": "/trustlist",
+                "syntax": "/trustlist",
+                "example": "/trustlist",
+                "description": "Shows a list of all players you have trusted in your claim."
+            },
+            {
+                "name": "/subdivideclaims",
+                "syntax": "/subdivideclaims",
+                "example": "/subdivideclaims",
+                "description": "Allows you to create subdivisions within a larger claim for better management."
+            },
+            {
+                "name": "/basicclaims",
+                "syntax": "/basicclaims",
+                "example": "/basicclaims",
+                "description": "Switches back to basic claim mode after using subdivision mode."
+            },
+            {
+                "name": "/buyclaimblocks",
+                "syntax": "/buyclaimblocks <amount>",
+                "example": "/buyclaimblocks 500",
+                "description": "Purchases more claim blocks using in-game currency if enabled."
+            },
+            {
+                "name": "/sellclaimblocks",
+                "syntax": "/sellclaimblocks <amount>",
+                "example": "/sellclaimblocks 500",
+                "description": "Sells your claim blocks for in-game currency if enabled."
+            },
+            {
+                "name": "/trapped",
+                "syntax": "/trapped",
+                "example": "/trapped",
+                "description": "If stuck inside a claim, this command teleports you to the nearest safe location."
+            }
+        ]
+    },
     "InvisibleItemFrames": {
         "commands": [
             { "name": "/ITF Toggle Visibility", "syntax": "/ITF Toggle Visibility", "example": "/ITF Toggle Visibility", "description": "Toggles item frame visibility." },
