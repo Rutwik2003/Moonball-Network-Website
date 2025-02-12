@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonball Plugin Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="server-info">
+            <h1>Moonball Plugin Wiki</h1>
+            <a href="index.html" class="btn-primary">Back to Home</a>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <span class="search-icon" onclick="toggleSearch()">🔍</span>
+            <input type="text" id="search" placeholder="Search a command..." onkeyup="filterCommands()">
+        </div>
+
+        <!-- Plugin List -->
+        <section class="plugins-container" id="plugin-list">
+            <h2>Server Plugins & Commands</h2>
+            <p>Loading plugin information...</p>
+        </section>
+
+        <footer>
+            <p>Moonball Network © 2025</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
