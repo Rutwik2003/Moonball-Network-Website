@@ -161,7 +161,8 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Server className="w-8 h-8 text-primary" />
+              {/* <Server className="w-8 h-8 text-primary" /> */}
+              <img src="./logo.png" alt="Server Logo" className="w-8 h-8" />
               <span className="text-xl font-bold">Moonball Network</span>
             </div>
             <div className="flex items-center space-x-6">
