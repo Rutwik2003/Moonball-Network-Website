@@ -10,10 +10,9 @@ const ranks = [
     perks: [
       'Access to /fly command',
       '5 homes with /sethome',
-      'Colored chat messages',
       'VIP tag in chat',
-      'Access to VIP-only areas',
-      'Priority server access'
+      'Keep Experience',
+      '1.5x Selling Price',
     ]
   },
   {
@@ -24,12 +23,11 @@ const ranks = [
     perks: [
       'All VIP perks',
       '10 homes with /sethome',
-      'Access to /heal command',
+      'Access to /echest command',
       'MVP tag in chat',
-      'Custom join messages',
-      'Access to particle effects',
-      'Priority support',
-      'Exclusive MVP-only events'
+      'Access to /repair command',
+      'Access /top command',
+      'See other inventory',
     ]
   }
 ];
