@@ -6,18 +6,21 @@ const ranks = [
     name: 'VIP',
     icon: <Star className="w-8 h-8 text-yellow-400" />,
     price: '$10M IGM',
-    color: 'from-yellow-400 to-yellow-600',
+    color: 'from-yellow-600 to-yellow-400',
     perks: [
       'Access to /fly command',
       '5 homes with /sethome',
       'VIP tag in chat',
-      'Keep Experience',
       '1.5x Selling Price',
+      'Access to /setwarp',
+      'Show your angel chest location with /angelchest',
+      'Auto-sort inventory with /chestsort',
+      'Fun actions: /sit, /lay, /crawl'
     ]
   },
   {
     name: 'MVP',
-    icon: <Crown className="w-8 h-8 text-purple-400" />,
+    icon: <Crown className="w-8 h-8 text-purple-40" />,
     price: '$25M IGM',
     color: 'from-purple-400 to-purple-600',
     perks: [
@@ -25,9 +28,10 @@ const ranks = [
       '10 homes with /sethome',
       'Access to /echest command',
       'MVP tag in chat',
-      'Access to /repair command',
-      'Access /top command',
-      'See other inventory',
+      'Access to /hat',
+      'View other player inventories with /invsee',
+      'Portable crafting table with /workbench',
+      'Use /sellwand to auto-sell items'
     ]
   }
 ];
