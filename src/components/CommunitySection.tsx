@@ -46,13 +46,48 @@ export function CommunitySection() {
             </div>
             <div className="flex-1 w-full">
               <div className="bg-muted p-6 rounded-lg">
-                <h4 className="font-bold mb-4">Server Rules</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>1. Be respectful to all players</li>
-                  <li>2. No griefing or stealing</li>
-                  <li>3. No cheating or exploits</li>
-                  <li>4. Keep chat family-friendly</li>
-                  <li>5. Follow staff instructions</li>
+                <h4 className="font-bold mb-4 text-white">Server Rules</h4>
+                <ul className="space-y-4 text-sm">
+                  <li>
+                    <span className="text-white font-bold">1. No Griefing:</span>
+                    {/* <span className="text-white"> Respect all builds. Do not destroy, alter, or steal other players' creations.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">2. No Cheating/Mods:</span>
+                    {/* <span className="text-white"> Use only approved clients. Hacked clients are forbidden.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">3. No Exploits or Duplication:</span>
+                    {/* <span className="text-white"> Exploiting glitches or duplicating items is strictly prohibited.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">4. No Stealing:</span>
+                    {/* <span className="text-white"> Do not take items or resources from others without permission.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">5. Respect Others:</span>
+                    {/* <span className="text-white"> Harassment, hate speech, or bullying will not be tolerated.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">6. No Unauthorized PvP:</span>
+                    {/* <span className="text-white"> Engage in PvP only in designated areas or with mutual consent.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">7. No Advertising:</span>
+                    {/* <span className="text-white"> Advertising other servers or external sites is not allowed.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">8. Keep Chat Clean:</span>
+                    {/* <span className="text-white"> Avoid spamming, excessive caps, and inappropriate language.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">9. Obey Staff:</span>
+                    {/* <span className="text-white"> Follow all directions from moderators and admins.</span> */}
+                  </li>
+                  <li>
+                    <span className="text-white font-bold">10. Have Fun:</span>
+                    {/* <span className="text-white"> Enjoy your time and help foster a friendly community!</span> */}
+                  </li>
                 </ul>
               </div>
             </div>

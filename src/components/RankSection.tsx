@@ -29,7 +29,6 @@ const ranks = [
       'Access to /echest command',
       'MVP tag in chat',
       'Access to /hat',
-      'View other player inventories with /invsee',
       'Portable crafting table with /workbench',
       'Use /sellwand to auto-sell items'
     ]
