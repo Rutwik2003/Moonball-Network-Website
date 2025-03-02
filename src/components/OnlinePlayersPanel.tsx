@@ -52,15 +52,15 @@ export function OnlinePlayersPanel({ isOpen, onClose, players }: OnlinePlayersPa
             </div>
             <div className="space-y-2">
               {players.list && players.list.length > 0 ? (
-                players.list.map((player, index) => (
+                players.list.map((player) => (
                   <div
-                    key={player.uuid || index}
+                    key={player.uuid}
                     className="flex items-center space-x-2 p-2 bg-muted rounded-lg"
                   >
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                       <Users className="w-4 h-4 text-primary" />
                     </div>
-                    <span>{player.name_clean}</span>
+                    <span dangerouslySetInnerHTML={{ __html: player.name_html || player.name_clean }} />
                   </div>
                 ))
               ) : (

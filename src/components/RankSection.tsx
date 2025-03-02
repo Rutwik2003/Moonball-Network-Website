@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
-import { Crown, Star, Shield } from 'lucide-react';
+import { Crown, Star, ArrowRightSquare } from 'lucide-react';
+import { ParallaxSection } from './ParallaxSection';
 
 const ranks = [
   {
     name: 'VIP',
-    icon: <Star className="w-8 h-8 text-yellow-400" />,
+    icon: <Star className="w-8 h-8 text-primary" />,
     price: '$10M IGM',
-    color: 'from-yellow-600 to-yellow-400',
+    color: 'from-primary/80 to-primary',
     perks: [
       'Access to /fly command',
       '5 homes with /sethome',
@@ -20,9 +21,9 @@ const ranks = [
   },
   {
     name: 'MVP',
-    icon: <Crown className="w-8 h-8 text-purple-40" />,
+    icon: <Crown className="w-8 h-8 text-primary" />,
     price: '$25M IGM',
-    color: 'from-purple-400 to-purple-600',
+    color: 'from-primary to-primary/80',
     perks: [
       'All VIP perks',
       '10 homes with /sethome',
@@ -37,7 +38,13 @@ const ranks = [
 
 export function RankSection() {
   return (
-    <section id="ranks" className="py-20 bg-muted">
+    <ParallaxSection 
+      id="ranks" 
+      className="py-20 bg-muted"
+      bgColor="hsl(var(--muted))"
+      direction="up"
+      speed={0.15}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Server Ranks</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -47,6 +54,7 @@ export function RankSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className="bg-card rounded-lg overflow-hidden shadow-lg"
             >
               <div className={`bg-gradient-to-r ${rank.color} p-6 flex items-center justify-between`}>
@@ -61,7 +69,7 @@ export function RankSection() {
                 <ul className="space-y-2">
                   {rank.perks.map((perk, perkIndex) => (
                     <li key={perkIndex} className="flex items-start space-x-2">
-                      <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <ArrowRightSquare className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>{perk}</span>
                     </li>
                   ))}
@@ -71,6 +79,6 @@ export function RankSection() {
           ))}
         </div>
       </div>
-    </section>
+    </ParallaxSection>
   );
 }
