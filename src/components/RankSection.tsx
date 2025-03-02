@@ -7,7 +7,7 @@ const ranks = [
     name: 'VIP',
     icon: <Star className="w-8 h-8 text-primary" />,
     price: '$10M IGM',
-    color: 'from-primary/80 to-primary',
+    color: 'to-primary from-primary/10',
     perks: [
       'Access to /fly command',
       '5 homes with /sethome',
@@ -23,7 +23,7 @@ const ranks = [
     name: 'MVP',
     icon: <Crown className="w-8 h-8 text-primary" />,
     price: '$25M IGM',
-    color: 'from-primary to-primary/80',
+    color: 'to-primary from-primary/10',
     perks: [
       'All VIP perks',
       '10 homes with /sethome',
